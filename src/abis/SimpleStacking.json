@@ -1,0 +1,776 @@
+{
+  "contractName": "SimpleStacking",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract SGToken",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "depositBalanceof",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "depositStartFrom",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "isAddressDeposited",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract SGToken\",\"name\":\"_token\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"depositBalanceof\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"depositStartFrom\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"isAddressDeposited\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/shiva/Workspace20/blockchain_AZ/defi_stacking_nnt/src/contracts/SimpleStacking.sol\":\"SimpleStacking\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/shiva/Workspace20/blockchain_AZ/defi_stacking_nnt/src/contracts/SGToken.sol\":{\"keccak256\":\"0xfad1556a8b89ec238c3cff8ae1aa018174a47f3e4484f27d4c3220109fe3eaab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c48a6c9de91ac6e149ee4289d1cb3f16abbf761b16e53d6769ca8e6afd2ee6ff\",\"dweb:/ipfs/QmSzr15Q23DZUAMK2NX7eKxGG3CVRKu5Sr6tqF9c34v6zF\"]},\"/home/shiva/Workspace20/blockchain_AZ/defi_stacking_nnt/src/contracts/SimpleStacking.sol\":{\"keccak256\":\"0x5d8cd59b78b30aafd8ad59dd79a21ac446d939b0a748c9aa7c9af1826f03e6d8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://67d6839f2dd55b1095f309c0e3ce979e731997eff814d36be00b8aa93397fa94\",\"dweb:/ipfs/QmZTyrvkKuLLFaBURAPBTjyeALiqRp6HN5QfuGM7XCdQQ4\"]},\"@openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x3b21f2c8d626de3b9925ae33e972d8bf5c8b1bffb3f4ee94daeed7d0679036e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7f8d45329fecbf0836ad7543330c3ecd0f8d0ffa42d4016278c3eb2215fdcdfe\",\"dweb:/ipfs/QmXWLT7GcnHtA5NiD6MFi2CV3EWJY4wv5mLNnypqYDrxL3\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xcbd85c86627a47fd939f1f4ee3ba626575ff2a182e1804b29f5136394449b538\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://53c6a80c519bb9356aad28efa9a1ec31603860eb759d2dc57f545fcae1dd1aca\",\"dweb:/ipfs/QmfRS6TtMNUHhvgLHXK21qKNnpn2S7g2Yd1fKaHKyFiJsR\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161026a38038061026a8339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101d6806100946000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80635e130a1214610046578063c1ecd94d146100a0578063d21fc256146100f8575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610150565b60405180821515815260200191505060405180910390f35b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610170565b6040518082815260200191505060405180910390f35b61013a6004803603602081101561010e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610188565b6040518082815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff1681565b60026020528060005260406000206000915090505481565b6003602052806000526040600020600091509050548156fea2646970667358221220e134fd73cfa24dfb65bb01360b81e948ca5f0897c91a27167e0fdf994da08fc764736f6c63430007060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80635e130a1214610046578063c1ecd94d146100a0578063d21fc256146100f8575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610150565b60405180821515815260200191505060405180910390f35b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610170565b6040518082815260200191505060405180910390f35b61013a6004803603602081101561010e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610188565b6040518082815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff1681565b60026020528060005260406000206000915090505481565b6003602052806000526040600020600091509050548156fea2646970667358221220e134fd73cfa24dfb65bb01360b81e948ca5f0897c91a27167e0fdf994da08fc764736f6c63430007060033",
+  "immutableReferences": {},
+  "sourceMap": "90:272:2:-:0;;;301:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;350:6;340:7;;:16;;;;;;;;;;;;;;;;;;301:59;90:272;;;;;;",
+  "deployedSourceMap": "90:272:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;144:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;197:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;248;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;144:50;;;;;;;;;;;;;;;;;;;;;;:::o;197:48::-;;;;;;;;;;;;;;;;;:::o;248:::-;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.0 <0.8.0;\n\nimport \"./SGToken.sol\";\n\ncontract SimpleStacking {\n\tSGToken private sgtoken;\n\n\tmapping(address => bool) public isAddressDeposited;\n\tmapping(address => uint) public depositBalanceof;\n\tmapping(address => uint) public depositStartFrom;\n\n\n\tconstructor(SGToken _token) public {\n\t\tsgtoken = _token;\n\t}\n}",
+  "sourcePath": "/home/shiva/Workspace20/blockchain_AZ/defi_stacking_nnt/src/contracts/SimpleStacking.sol",
+  "ast": {
+    "absolutePath": "/home/shiva/Workspace20/blockchain_AZ/defi_stacking_nnt/src/contracts/SimpleStacking.sol",
+    "exportedSymbols": {
+      "Context": [
+        125
+      ],
+      "ERC20": [
+        824
+      ],
+      "IERC20": [
+        902
+      ],
+      "SGToken": [
+        74
+      ],
+      "SafeMath": [
+        321
+      ],
+      "SimpleStacking": [
+        102
+      ]
+    },
+    "id": 103,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 76,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:2"
+      },
+      {
+        "absolutePath": "/home/shiva/Workspace20/blockchain_AZ/defi_stacking_nnt/src/contracts/SGToken.sol",
+        "file": "./SGToken.sol",
+        "id": 77,
+        "nodeType": "ImportDirective",
+        "scope": 103,
+        "sourceUnit": 75,
+        "src": "65:23:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 102,
+        "linearizedBaseContracts": [
+          102
+        ],
+        "name": "SimpleStacking",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 79,
+            "mutability": "mutable",
+            "name": "sgtoken",
+            "nodeType": "VariableDeclaration",
+            "scope": 102,
+            "src": "117:23:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_SGToken_$74",
+              "typeString": "contract SGToken"
+            },
+            "typeName": {
+              "id": 78,
+              "name": "SGToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 74,
+              "src": "117:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SGToken_$74",
+                "typeString": "contract SGToken"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "functionSelector": "5e130a12",
+            "id": 83,
+            "mutability": "mutable",
+            "name": "isAddressDeposited",
+            "nodeType": "VariableDeclaration",
+            "scope": 102,
+            "src": "144:50:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 82,
+              "keyType": {
+                "id": 80,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "152:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "144:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueType": {
+                "id": 81,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "163:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "c1ecd94d",
+            "id": 87,
+            "mutability": "mutable",
+            "name": "depositBalanceof",
+            "nodeType": "VariableDeclaration",
+            "scope": 102,
+            "src": "197:48:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 86,
+              "keyType": {
+                "id": 84,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "205:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "197:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 85,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "216:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "d21fc256",
+            "id": 91,
+            "mutability": "mutable",
+            "name": "depositStartFrom",
+            "nodeType": "VariableDeclaration",
+            "scope": 102,
+            "src": "248:48:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 90,
+              "keyType": {
+                "id": 88,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "256:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "248:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 89,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "267:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 100,
+              "nodeType": "Block",
+              "src": "336:24:2",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 98,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 96,
+                      "name": "sgtoken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 79,
+                      "src": "340:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SGToken_$74",
+                        "typeString": "contract SGToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 97,
+                      "name": "_token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 93,
+                      "src": "350:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SGToken_$74",
+                        "typeString": "contract SGToken"
+                      }
+                    },
+                    "src": "340:16:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SGToken_$74",
+                      "typeString": "contract SGToken"
+                    }
+                  },
+                  "id": 99,
+                  "nodeType": "ExpressionStatement",
+                  "src": "340:16:2"
+                }
+              ]
+            },
+            "id": 101,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 94,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 93,
+                  "mutability": "mutable",
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 101,
+                  "src": "313:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_SGToken_$74",
+                    "typeString": "contract SGToken"
+                  },
+                  "typeName": {
+                    "id": 92,
+                    "name": "SGToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 74,
+                    "src": "313:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SGToken_$74",
+                      "typeString": "contract SGToken"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "312:16:2"
+            },
+            "returnParameters": {
+              "id": 95,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "336:0:2"
+            },
+            "scope": 102,
+            "src": "301:59:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 103,
+        "src": "90:272:2"
+      }
+    ],
+    "src": "32:330:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/shiva/Workspace20/blockchain_AZ/defi_stacking_nnt/src/contracts/SimpleStacking.sol",
+    "exportedSymbols": {
+      "Context": [
+        125
+      ],
+      "ERC20": [
+        824
+      ],
+      "IERC20": [
+        902
+      ],
+      "SGToken": [
+        74
+      ],
+      "SafeMath": [
+        321
+      ],
+      "SimpleStacking": [
+        102
+      ]
+    },
+    "id": 103,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 76,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:2"
+      },
+      {
+        "absolutePath": "/home/shiva/Workspace20/blockchain_AZ/defi_stacking_nnt/src/contracts/SGToken.sol",
+        "file": "./SGToken.sol",
+        "id": 77,
+        "nodeType": "ImportDirective",
+        "scope": 103,
+        "sourceUnit": 75,
+        "src": "65:23:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 102,
+        "linearizedBaseContracts": [
+          102
+        ],
+        "name": "SimpleStacking",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 79,
+            "mutability": "mutable",
+            "name": "sgtoken",
+            "nodeType": "VariableDeclaration",
+            "scope": 102,
+            "src": "117:23:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_SGToken_$74",
+              "typeString": "contract SGToken"
+            },
+            "typeName": {
+              "id": 78,
+              "name": "SGToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 74,
+              "src": "117:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SGToken_$74",
+                "typeString": "contract SGToken"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "functionSelector": "5e130a12",
+            "id": 83,
+            "mutability": "mutable",
+            "name": "isAddressDeposited",
+            "nodeType": "VariableDeclaration",
+            "scope": 102,
+            "src": "144:50:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 82,
+              "keyType": {
+                "id": 80,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "152:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "144:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueType": {
+                "id": 81,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "163:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "c1ecd94d",
+            "id": 87,
+            "mutability": "mutable",
+            "name": "depositBalanceof",
+            "nodeType": "VariableDeclaration",
+            "scope": 102,
+            "src": "197:48:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 86,
+              "keyType": {
+                "id": 84,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "205:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "197:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 85,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "216:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "d21fc256",
+            "id": 91,
+            "mutability": "mutable",
+            "name": "depositStartFrom",
+            "nodeType": "VariableDeclaration",
+            "scope": 102,
+            "src": "248:48:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 90,
+              "keyType": {
+                "id": 88,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "256:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "248:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 89,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "267:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 100,
+              "nodeType": "Block",
+              "src": "336:24:2",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 98,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 96,
+                      "name": "sgtoken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 79,
+                      "src": "340:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SGToken_$74",
+                        "typeString": "contract SGToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 97,
+                      "name": "_token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 93,
+                      "src": "350:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SGToken_$74",
+                        "typeString": "contract SGToken"
+                      }
+                    },
+                    "src": "340:16:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SGToken_$74",
+                      "typeString": "contract SGToken"
+                    }
+                  },
+                  "id": 99,
+                  "nodeType": "ExpressionStatement",
+                  "src": "340:16:2"
+                }
+              ]
+            },
+            "id": 101,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 94,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 93,
+                  "mutability": "mutable",
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 101,
+                  "src": "313:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_SGToken_$74",
+                    "typeString": "contract SGToken"
+                  },
+                  "typeName": {
+                    "id": 92,
+                    "name": "SGToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 74,
+                    "src": "313:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SGToken_$74",
+                      "typeString": "contract SGToken"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "312:16:2"
+            },
+            "returnParameters": {
+              "id": 95,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "336:0:2"
+            },
+            "scope": 102,
+            "src": "301:59:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 103,
+        "src": "90:272:2"
+      }
+    ],
+    "src": "32:330:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.3",
+  "updatedAt": "2021-07-18T13:10:07.419Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
